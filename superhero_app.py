@@ -1,6 +1,5 @@
 from superhero_api import SuperHeroAPI, API_KEY
 
-
 class SuperHeroApp():
     def __init__(self):
         self._s = SuperHeroAPI(API=API_KEY)
@@ -22,7 +21,7 @@ class SuperHeroApp():
             self._command_dispatcher(command)
 
     def _parse_command(self, _input):
-        return _input.strip().lower().split()
+        return _input.strip().lower().split(sep='-')
 
     def _command_dispatcher(self, command):
         if len(command) <= 1:

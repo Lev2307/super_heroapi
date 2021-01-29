@@ -14,7 +14,7 @@ API_KEY = 10218686935504422
 
 #DATA
 directory_list = os.listdir()
-if not 'heroes_data.lson' in directory_list:
+if not 'heroes_data.json' in directory_list:
     get_data()
 
 with open('heroes_data.json', 'r+') as f:
