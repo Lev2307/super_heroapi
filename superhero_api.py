@@ -20,7 +20,6 @@ if not 'heroes_data.json' in directory_list:
 with open('heroes_data.json', 'r+') as f:
     heroes_data = json.loads(f.read())
 
-
 class SuperHeroAPI:
     def __init__(self, API=API_KEY, data = heroes_data):
         self._token = API
@@ -66,7 +65,7 @@ class SuperHeroAPI:
 
 
 # s = SuperHeroAPI()
-# result = s.get_hero('batman')
+# result = s.get_hero_image_url('batman')
 # pp.pprint(result)
 
 

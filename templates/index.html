@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    height: 100vh;
+    background: linear-gradient(to right, rgb(55, 59, 68), rgb(66, 134, 244));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    width: 800px;
+    background: linear-gradient(to right, rgb(55, 59, 68), rgb(66, 134, 244));
+    -webkit-box-shadow: 9px 7px 10px -2px rgba(3, 4, 4, 0.2) inset;
+    -moz-box-shadow: 9px 7px 10px -2px rgba(3, 4, 4, 0.2) inset;
+    box-shadow: 9px 7px 10px -2px rgba(3, 4, 4, 0.2) inset;
+    border-radius: 20px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.img_and_stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 450px;
+    width: 800px;
+}
+.id_and_name {
+    margin-left: 35px;
+}
+h1 {
+    color: aliceblue;
+    font-size: 16px;
+    font-family: 'Lato';
+}
+img {
+    width: 400px;
+    height: 400px;
+}
+input[type=text] {
+    width: 400px;
+    height: 27px;
+    text-indent: 10px;
+}
+input[type=submit] {
+    position: relative;
+    display: inline-block;
+    padding: 8px 23px;
+    color: #fff;
+    background: linear-gradient(to right, rgb(15, 12, 41), rgb(48, 43, 99), rgb(36, 36, 62));
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    font-size: 12px;
+}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="img_and_stats">
+            <div class="text">
+                <div class="id_and_name">
+                    <h1>Id: {id}</h1>
+                    <h1>Name: {character_name}</h1>
+                </div>
+                <div class="stats">
+                    <h1>Stats:</h1>
+                    <h1>Combat: {num}</h1>
+                    <h1>Durability: {num}</h1>
+                    <h1>Intellegence: {num}</h1>
+                    <h1>Power: {num}</h1>
+                    <h1>Speed: {num}</h1>
+                    <h1>Strength: {num}</h1>
+                </div>
+            </div>
+            <img src="">
+        </div>
+        <form action="" method="post">
+            <input type="text" name="name" placeholder="Enter your name: ">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
